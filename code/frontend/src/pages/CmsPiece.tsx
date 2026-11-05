@@ -163,7 +163,7 @@ export default function CmsPiece() {
           </label>
 
           <div className="flex flex-wrap items-center gap-[var(--space-3)]">
-            <button type="submit" data-testid="piece-save" className="bg-accent px-[var(--space-8)] py-[var(--space-3)] text-accent-ink">
+            <button type="submit" data-testid="piece-save" className="bg-accent-strong px-[var(--space-8)] py-[var(--space-3)] text-accent-ink">
               {words.save}
             </button>
             {editing && (
@@ -171,7 +171,7 @@ export default function CmsPiece() {
                 type="button"
                 onClick={flip}
                 data-testid={draft.status === "sold" ? "mark-here" : "mark-sold"}
-                className="inline-flex items-center gap-2 border border-field px-[var(--space-6)] py-[var(--space-3)] text-ink hover:border-accent hover:text-accent"
+                className="inline-flex items-center gap-2 border border-field px-[var(--space-6)] py-[var(--space-3)] text-ink hover:border-accent hover:text-accent-strong"
               >
                 <Icon name={draft.status === "sold" ? "check" : "tag"} size={16} />
                 {draft.status === "sold" ? words.markHere : words.markSold}
