@@ -88,7 +88,7 @@ export default function DashboardLayout({ title, nav, actions, children, brand }
               to={item.to}
               onClick={() => setOpen(false)}
               className={({ isActive }) =>
-                `flex items-center justify-between gap-2 rounded px-2 py-2 text-sm ${isActive ? "bg-accent text-accent-ink" : "text-ink hover:bg-ground"}`
+                `flex items-center justify-between gap-2 rounded px-2 py-2 text-sm ${isActive ? "bg-accent-strong text-accent-ink" : "text-ink hover:bg-ground"}`
               }
             >
               <span>{item.label}</span>
