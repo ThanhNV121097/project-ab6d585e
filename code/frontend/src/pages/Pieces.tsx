@@ -85,7 +85,7 @@ export default function Pieces() {
               type="button"
               onClick={loadMore}
               data-testid="pieces-more"
-              className="mt-[var(--space-12)] border border-field px-[var(--space-8)] py-[var(--space-3)] text-ink hover:border-accent hover:text-accent"
+              className="mt-[var(--space-12)] border border-field px-[var(--space-8)] py-[var(--space-3)] text-ink hover:border-accent hover:text-accent-strong"
             >
               <T k="pieces.more" />
             </button>
@@ -118,7 +118,7 @@ function Filters({ title, values, chosen, onChoose, testid, className = "" }: {
                 onClick={() => onChoose(on ? "" : v)}
                 data-testid={testid(v)}
                 aria-pressed={on}
-                className={`text-left text-sm ${on ? "text-accent" : "text-ink-soft"} hover:text-ink`}
+                className={`text-left text-sm ${on ? "text-accent-strong" : "text-ink-soft"} hover:text-ink`}
               >
                 {v}
               </button>
