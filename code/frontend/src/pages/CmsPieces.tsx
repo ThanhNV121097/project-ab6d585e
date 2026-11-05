@@ -38,6 +38,7 @@ export default function CmsPieces() {
     glaze: useContent("pieces.glaze"),
     price: useContent("pieces.price"),
     of: useContent("cms.pieces.of"),
+    intro: useContent("cms.pieces.intro"),
   };
   const { items, total, pages, page, loading } = useCollection<Piece>("pieces", {
     where: { status: t.get("status") },
@@ -76,6 +77,8 @@ export default function CmsPieces() {
         </div>
       }
     >
+      <p className="max-w-[68ch] text-sm text-ink-soft">{words.intro}</p>
+
       <TableFilters onClear={t.filtering ? t.clear : undefined}>
         <SearchBox value={t.q} onChange={t.setQ} placeholder={words.search} />
         <FilterSelect
