@@ -48,6 +48,10 @@ export default function CmsPieces() {
     page: t.page,
     pageSize: t.size,
   });
+  const { items: all } = useCollection<Piece>("pieces", { pageSize: 500 });
+
+  const available = all.filter((p) => p.status !== "sold").length;
+  const soldCount = all.length - available;
 
   if (!session) return <NotSignedIn />;
 
@@ -78,6 +82,14 @@ export default function CmsPieces() {
       }
     >
       <p className="max-w-[68ch] text-sm text-ink-soft">{words.intro}</p>
+      <dl className="grid gap-[var(--space-4)] sm:grid-cols-3">
+        {([[words.title, all.length], [words.available, available], [words.sold, soldCount]] as const).map(([term, n]) => (
+          <div key={term} className="border border-line bg-surface px-[var(--space-4)] py-[var(--space-3)]">
+            <dt className="label text-ink-soft">{term}</dt>
+            <dd className="tabular mt-[var(--space-1)] font-display text-2xl text-ink">{n}</dd>
+          </div>
+        ))}
+      </dl>
 
       <TableFilters onClear={t.filtering ? t.clear : undefined}>
         <SearchBox value={t.q} onChange={t.setQ} placeholder={words.search} />
