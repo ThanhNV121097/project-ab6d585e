@@ -43,7 +43,7 @@ export default function SiteHeader({ over = false }: { over?: boolean }) {
             <a
               href={`tel:${tel}`}
               data-testid="header-call"
-              className="flex items-center gap-2 whitespace-nowrap bg-accent px-[var(--space-4)] py-[var(--space-2)] text-sm text-accent-ink"
+              className="flex items-center gap-2 whitespace-nowrap bg-accent-strong px-[var(--space-4)] py-[var(--space-2)] text-sm text-accent-ink"
             >
               <Icon name="phone" size={16} />
               <span className="tabular">{phone}</span>
@@ -61,7 +61,7 @@ export default function SiteHeader({ over = false }: { over?: boolean }) {
           </Link>
         ))}
         {tel && (
-          <a href={`tel:${tel}`} className="mt-[var(--space-4)] flex items-center gap-2 self-start bg-accent px-[var(--space-6)] py-[var(--space-3)] text-accent-ink">
+          <a href={`tel:${tel}`} className="mt-[var(--space-4)] flex items-center gap-2 self-start bg-accent-strong px-[var(--space-6)] py-[var(--space-3)] text-accent-ink">
             <Icon name="phone" size={18} />
             <span className="tabular">{phone}</span>
           </a>
