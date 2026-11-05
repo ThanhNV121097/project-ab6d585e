@@ -21,9 +21,12 @@ import type { Piece } from "../types";
 export default function Home() {
   const { items: pieces, total } = useCollection<Piece>("pieces", {
     where: { status: "available" },
-    pageSize: 8,
+    pageSize: 11,
   });
+  // The three in the hero band and the eight on the shelf are different
+  // pieces: a page that shows one photograph twice has fewer than it looks.
   const three = pieces.slice(0, 3);
+  const shelf = pieces.slice(3, 11);
   const phone = useContent("contact.phone");
   const hours = useContent("contact.hours");
   const tel = digits(phone);
@@ -43,7 +46,7 @@ export default function Home() {
           </p>
         </div>
         <Grid max={4} phone={2} className="mt-[var(--space-12)]">
-          {pieces.map((p) => (
+          {shelf.map((p) => (
             <PieceCard key={p.id} piece={p} />
           ))}
         </Grid>
