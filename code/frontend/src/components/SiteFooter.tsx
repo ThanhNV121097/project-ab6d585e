@@ -27,17 +27,6 @@ export default function SiteFooter() {
         <div className="max-w-[34ch]">
           <Logo />
           <T k="footer.line" as="p" className="mt-[var(--space-4)] text-sm text-ink-soft" />
-          {chat && (
-            <a
-              href={`https://zalo.me/${chat}`}
-              target="_blank"
-              rel="noreferrer"
-              aria-label={zaloLabel}
-              className="mt-[var(--space-6)] inline-flex items-center text-ink-soft hover:text-ink"
-            >
-              <SocialIcon network="zalo" size={22} />
-            </a>
-          )}
         </div>
         <div>
           <T k="footer.visit" as="h2" className="label text-ink-soft" />
@@ -50,8 +39,10 @@ export default function SiteFooter() {
             )}
             {chat && (
               <li className="flex items-center gap-[var(--space-3)]">
-                <Icon name="chat" size={16} className="text-accent" />
-                <a href={`https://zalo.me/${chat}`} target="_blank" rel="noreferrer" className="tabular text-ink hover:text-accent">{zalo}</a>
+                <span className="flex h-4 w-4 items-center justify-center text-accent">
+                  <SocialIcon network="zalo" size={16} />
+                </span>
+                <a href={`https://zalo.me/${chat}`} target="_blank" rel="noreferrer" aria-label={zaloLabel} className="tabular text-ink hover:text-accent-strong">{zalo}</a>
               </li>
             )}
             {email && (
