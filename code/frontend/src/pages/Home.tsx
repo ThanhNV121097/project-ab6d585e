@@ -50,7 +50,7 @@ export default function Home() {
         <Link
           to="/pieces"
           data-testid="home-see-all"
-          className="mt-[var(--space-12)] inline-flex items-center gap-[var(--space-3)] border-b border-accent pb-1 font-display text-lg text-ink hover:text-accent"
+          className="mt-[var(--space-12)] inline-flex items-center gap-[var(--space-3)] border-b border-accent pb-1 font-display text-lg text-ink hover:text-accent-strong"
         >
           <T k="home.shelf.all" />
           <Icon name="arrow" size={18} />
@@ -92,7 +92,7 @@ export default function Home() {
             <a
               href={`tel:${tel}`}
               data-testid="home-call"
-              className="inline-flex items-center justify-center gap-[var(--space-3)] whitespace-nowrap bg-accent px-[var(--space-8)] py-[var(--space-4)] text-accent-ink"
+              className="inline-flex items-center justify-center gap-[var(--space-3)] whitespace-nowrap bg-accent-strong px-[var(--space-8)] py-[var(--space-4)] text-accent-ink"
             >
               <Icon name="phone" size={18} />
               <span className="tabular">{phone}</span>
@@ -100,7 +100,7 @@ export default function Home() {
           )}
           <Link
             to="/contact"
-            className="inline-flex items-center justify-center gap-[var(--space-3)] whitespace-nowrap border border-field px-[var(--space-8)] py-[var(--space-4)] text-ink hover:border-accent hover:text-accent"
+            className="inline-flex items-center justify-center gap-[var(--space-3)] whitespace-nowrap border border-field px-[var(--space-8)] py-[var(--space-4)] text-ink hover:border-accent hover:text-accent-strong"
           >
             <Icon name="chat" size={18} />
             <T k="home.ask.write" />
@@ -140,7 +140,7 @@ function Hero({ three, phone, tel, hours }: { three: Piece[]; phone: string; tel
               {hours}
             </span>
             {tel && (
-              <a href={`tel:${tel}`} data-testid="hero-call" className="flex items-center gap-[var(--space-2)] text-ink hover:text-accent">
+              <a href={`tel:${tel}`} data-testid="hero-call" className="flex items-center gap-[var(--space-2)] text-ink hover:text-accent-strong">
                 <Icon name="phone" size={15} className="text-accent" />
                 <span className="tabular">{phone}</span>
               </a>
