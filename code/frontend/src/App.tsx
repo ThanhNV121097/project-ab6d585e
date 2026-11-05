@@ -21,10 +21,6 @@ import { DirectionOne, DirectionTwo } from "./directions";
  * <PhotoCredits/>: the stock photos' credits, which their licences ask for.
  */
 export default function App() {
-  // The direction pages are judged on their own ground: no header, no footer,
-  // nothing of this shell around them. They go when a direction is chosen.
-  if (window.location.pathname === "/directions-1") return <DirectionOne />;
-  if (window.location.pathname === "/directions-2") return <DirectionTwo />;
   const links = useList<{ label: string; href: string }>("nav.links");
   const name = useContent("site.name");
   // The CTA's own target, from content.json. It used to be href="#contact"
