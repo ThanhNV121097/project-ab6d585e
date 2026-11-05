@@ -13,6 +13,11 @@
   --ink-soft: #A79687;
   --accent: #C9521F;
   --accent-ink: #16110E;
+  /* The same kiln fire, carried up to AA against this very dark ground:
+     #C9521F is 4.2:1 on #16110E, which fails for words and for a button's
+     label. Rules, marks and edges keep --accent; anything a person READS
+     uses this one, at 6.5:1. */
+  --accent-strong: #E8793F;
   --line: rgba(242, 235, 227, 0.14);
   /* The edge of a form field: 3:1 against --ground, so an input is findable
      on a near-black page where --line is deliberately almost invisible. */
