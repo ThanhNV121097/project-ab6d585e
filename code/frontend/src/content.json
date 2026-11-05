@@ -2,6 +2,7 @@
   "cms": {
     "locked": {
       "heading": "This area is the studio's",
+      "note": "Visitors do not need this area — the pieces, the prices and the telephone number are all on the open site.",
       "signin": "Sign in",
       "sub": "Sign in to add a piece, change a price or take one off the site."
     },
