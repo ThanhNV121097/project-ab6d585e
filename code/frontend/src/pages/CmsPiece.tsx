@@ -107,7 +107,7 @@ export default function CmsPiece() {
 
       <p className="max-w-[68ch] text-sm text-ink-soft">{words.intro}</p>
 
-      <form onSubmit={submit} className="grid gap-[var(--space-8)] lg:grid-cols-[1fr_22rem] lg:items-start">
+      <form onSubmit={submit} className="grid max-w-[64rem] gap-[var(--space-8)] lg:grid-cols-[1fr_20rem] lg:items-start">
         <div className="flex flex-col gap-[var(--space-4)]">
           <label className="flex flex-col gap-[var(--space-2)] text-sm">
             <span className="text-ink-soft">{words.name}</span>
