@@ -17,7 +17,13 @@
       "photo": "Photograph",
       "photonote": "The photograph's file path",
       "pricenote": "",
-      "save": "Save the piece"
+      "save": "Save the piece",
+      "tips": {
+        "1": "One piece on a plain, light surface, shot straight on.",
+        "2": "Daylight from the side, so the glaze shows its depth.",
+        "3": "Square, and the piece filling most of the frame.",
+        "heading": "A photograph that sells a piece"
+      }
     },
     "pieces": {
       "add": "Add a piece",
