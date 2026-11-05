@@ -21,6 +21,8 @@ export default function Pieces() {
   const kind = t.get("kind");
   const glaze = t.get("glaze");
   const showing = useContent("pieces.showing");
+  const kindTitle = useContent("pieces.filter.kind");
+  const glazeTitle = useContent("pieces.filter.glaze");
   const { items, total, hasMore, loading, loadMore } = useCollection<Piece>("pieces", {
     where: { kind, glaze, status: "available" },
     sort: t.sort || "price",
@@ -35,14 +37,14 @@ export default function Pieces() {
       <div className="mt-[var(--space-16)] grid gap-[var(--space-12)] lg:grid-cols-[14rem_1fr] lg:gap-[var(--space-16)]">
         <div className="lg:sticky lg:top-[var(--space-8)] lg:self-start">
           <Filters
-            title={useContent("pieces.filter.kind")}
+            title={kindTitle}
             values={KINDS}
             chosen={kind}
             onChoose={(v) => t.set("kind", v)}
             testid={(v) => `kind-${v.toLowerCase().replace(/\s+/g, "-")}`}
           />
           <Filters
-            title={useContent("pieces.filter.glaze")}
+            title={glazeTitle}
             values={GLAZES}
             chosen={glaze}
             onChoose={(v) => t.set("glaze", v)}
