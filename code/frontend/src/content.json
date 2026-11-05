@@ -1,61 +1,210 @@
 {
-  "site": {
-    "name": "Your business",
-    "logo": "",
-    "description": "One sentence on what the business is, for search results and shared links.",
-    "locale": "vi-VN"
-  },
-  "nav": {
-    "links": [
-      {
-        "label": "Home",
-        "href": "/"
-      }
-    ],
-    "cta": {
-      "label": "Get in touch",
-      "href": "#contact"
+  "cms": {
+    "locked": {
+      "heading": "This area is the studio's",
+      "signin": "Sign in",
+      "sub": "Sign in to add a piece, change a price or take one off the site."
     },
-    "menu": {
-      "open": "Open menu",
-      "close": "Close menu"
+    "out": "Sign out",
+    "piece": {
+      "back": "Back to the pieces",
+      "detail": "About this piece",
+      "markhere": "Put it back on the site",
+      "marksold": "Mark it sold",
+      "photo": "Photograph",
+      "photonote": "The photograph's file path",
+      "pricenote": "",
+      "save": "Save the piece"
+    },
+    "pieces": {
+      "add": "Add a piece",
+      "edit": "Edit",
+      "empty": "No piece matches that. Clear the search to see them all.",
+      "name": "Name",
+      "search": "Search by name or glaze",
+      "status": "On the site",
+      "title": "Pieces"
     }
   },
-  "hero": {
-    "eyebrow": "",
-    "headline": "A headline of a few words",
-    "sub": "One line under it, and no more.",
-    "cta": {
-      "label": "Get in touch",
-      "href": "#contact"
-    }
-  },
-  "footer": {
-    "line": "Your business · District 1, Saigon"
+  "contact": {
+    "address": "Chu Đậu, Thái Tân, Nam Sách, Hải Dương",
+    "dock": {
+      "call": "Call the studio",
+      "zalo": "Message the studio on Zalo"
+    },
+    "email": "xuong@gomchudau.vn",
+    "form": {
+      "fields": {},
+      "message": "Which piece, and anything you want to ask",
+      "name": "Your name",
+      "offline": "This form is not connected yet — call or message us on Zalo instead.",
+      "reply_to": "Phone or email",
+      "send": "Send",
+      "sending": "Sending…",
+      "sent": "Thank you — your message reached the studio. We answer during studio hours."
+    },
+    "heading": "Write to us about a piece",
+    "hours": "8:00–17:00, Monday to Saturday",
+    "intro": "Tell us which piece you are asking about and how to reach you. We answer during studio hours.",
+    "labels": {
+      "address": "Where we are",
+      "email": "Email",
+      "hours": "Open",
+      "openzalo": "Open a Zalo chat",
+      "phone": "Phone",
+      "zalo": "Zalo"
+    },
+    "phone": "0220 3882 345",
+    "zalo": "0220 3882 345"
   },
   "credits": {
     "label": "Photos"
   },
-  "contact": {
-    "heading": "Get in touch",
-    "phone": "",
-    "zalo": "",
-    "email": "",
-    "address": "",
-    "hours": "",
-    "dock": {
-      "call": "Call us",
-      "zalo": "Message us on Zalo"
+  "footer": {
+    "line": "A pottery studio in Chu Đậu, Thái Tân. Every piece on this site was thrown and fired here, and there is one of each.",
+    "pages": "Pages",
+    "signin": "Studio sign-in",
+    "visit": "Reach us"
+  },
+  "hero": {
+    "cta": {
+      "href": "#contact",
+      "label": "Get in touch"
     },
-    "form": {
-      "name": "Your name",
-      "reply_to": "Phone or email",
-      "message": "Your message",
-      "send": "Send",
-      "sending": "Sending…",
-      "sent": "Thank you — we have your message and will answer soon.",
-      "offline": "This form is not connected yet — call or message us instead.",
-      "fields": {}
+    "eyebrow": "",
+    "headline": "A headline of a few words",
+    "sub": "One line under it, and no more."
+  },
+  "home": {
+    "ask": {
+      "body": "We will say what it weighs, how it was fired and whether it is still here. Nothing is bought or paid for on this site.",
+      "heading": "Ring us and we will tell you about it",
+      "label": "About a piece",
+      "write": "Write instead"
+    },
+    "hero": {
+      "headline": "Thrown and fired in the village",
+      "label": "Chu Đậu, Thái Tân",
+      "sub": "Bowls, plates, vases and tea sets. One of each, and when a piece goes it comes off the site."
+    },
+    "kiln": {
+      "body": "Each piece is thrown, dried, glazed and fired here — not pressed in a mould and not bought in. A firing takes a day to load and a day to cool, and what comes out of it is what you see.",
+      "clay": {
+        "term": "Clay",
+        "value": "Dug and settled locally"
+      },
+      "firing": {
+        "term": "Firing",
+        "value": "One kiln, one load at a time"
+      },
+      "glaze": {
+        "term": "Glazes",
+        "value": "Hoa lam, men ngọc, men rạn"
+      },
+      "heading": "Why it costs what it costs",
+      "label": "The kiln"
+    },
+    "shelf": {
+      "all": "See every piece",
+      "count": "pieces available",
+      "heading": "What is finished and here now",
+      "label": "On the shelf"
     }
+  },
+  "nav": {
+    "cta": {
+      "href": "/contact",
+      "label": "Call the studio"
+    },
+    "links": [
+      {
+        "href": "/pieces",
+        "label": "The pieces"
+      },
+      {
+        "href": "/contact",
+        "label": "Contact"
+      }
+    ],
+    "menu": {
+      "close": "Close menu",
+      "open": "Open menu"
+    }
+  },
+  "pages": {
+    "cms": {
+      "title": "Pieces — Gốm Chu Đậu"
+    },
+    "cmspiece": {
+      "title": "A piece — Gốm Chu Đậu"
+    },
+    "contact": {
+      "description": "Phone, Zalo, email and where to find the studio in Chu Đậu, Thái Tân, Nam Sách, Hải Dương.",
+      "heading": "Call, message or write",
+      "label": "Reach the studio",
+      "map": "The village",
+      "sub": "We are at the kiln during studio hours. The quickest answer is the telephone.",
+      "title": "Contact — Gốm Chu Đậu"
+    },
+    "piece": {
+      "description": "The size, the glaze and the price of one piece from the studio in Chu Đậu, Thái Tân.",
+      "title": "A piece — Gốm Chu Đậu"
+    },
+    "pieces": {
+      "description": "Bowls, plates, vases and tea sets finished at the studio in Chu Đậu, Thái Tân, each with its size, its glaze and its price.",
+      "heading": "The pieces on the shelf",
+      "label": "Everything here",
+      "sub": "Narrow them by kind or by glaze. Each one is a single piece with its own size and price.",
+      "title": "The pieces — Gốm Chu Đậu"
+    },
+    "signin": {
+      "can": {
+        "add": "Add a piece with its photograph and price",
+        "price": "Change a price",
+        "sold": "Take a piece off the site when it sells"
+      },
+      "continue": "Open the pieces",
+      "description": "The studio's private sign-in for managing the pieces on the site.",
+      "heading": "Sign in to manage the pieces",
+      "label": "Studio only",
+      "sub": "This is the studio's own door. Visitors do not need it.",
+      "title": "Sign in — Gốm Chu Đậu"
+    }
+  },
+  "pieces": {
+    "also": "Others of this kind",
+    "ask": "There is one of this piece. Ring or message and we will tell you whether it is still on the shelf.",
+    "back": "All pieces",
+    "filter": {
+      "clear": "Clear filters",
+      "glaze": "Glaze",
+      "kind": "Kind"
+    },
+    "glaze": "Glaze",
+    "here": "Here now",
+    "kind": "Kind",
+    "loading": "Loading…",
+    "missing": "That piece is not on the site",
+    "more": "Show more pieces",
+    "none": "Nothing matches those two filters. Clear one and look again.",
+    "price": "Price",
+    "showing": "pieces",
+    "size": "Size",
+    "sold": "Sold",
+    "state": "On the site",
+    "zalo": "Message on Zalo"
+  },
+  "signin": {
+    "email": "Email",
+    "note": "One account, the studio's. Tell us if somebody else needs to sign in too.",
+    "password": "Password",
+    "problem": "Enter the email you sign in with.",
+    "submit": "Sign in"
+  },
+  "site": {
+    "description": "A small pottery studio in Chu Đậu, Thái Tân — bowls, plates, vases and tea sets, each piece thrown and fired here.",
+    "locale": "vi-VN",
+    "logo": "",
+    "name": "Gốm Chu Đậu"
   }
 }
