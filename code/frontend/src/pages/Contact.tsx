@@ -33,7 +33,7 @@ export default function Contact() {
           <dl className="border-t border-line">
             {tel && (
               <Line icon="phone" term={<T k="contact.labels.phone" />}>
-                <a href={`tel:${tel}`} data-testid="contact-call" className="tabular text-ink hover:text-accent">{phone}</a>
+                <a href={`tel:${tel}`} data-testid="contact-call" className="tabular text-ink hover:text-accent-strong">{phone}</a>
               </Line>
             )}
             {chat && (
