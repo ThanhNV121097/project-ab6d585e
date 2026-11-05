@@ -12,6 +12,7 @@ export default {
         ink: "var(--ink)",
         "ink-soft": "var(--ink-soft)",
         accent: "var(--accent)",
+        "accent-strong": "var(--accent-strong)",
         "accent-ink": "var(--accent-ink)",
         line: "var(--line)",
         field: "var(--field-line)",
