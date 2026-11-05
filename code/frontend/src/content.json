@@ -9,8 +9,10 @@
     "piece": {
       "back": "Back to the pieces",
       "detail": "About this piece",
+      "intro": "The name, the size and the price are what a visitor reads; the photograph is what they decide on. Save when you are done.",
       "markhere": "Put it back on the site",
       "marksold": "Mark it sold",
+      "nophoto": "No photograph yet. Paste the file path of one, or drop a photograph on this piece in the Studio.",
       "photo": "Photograph",
       "photonote": "The photograph's file path",
       "pricenote": "",
@@ -20,6 +22,7 @@
       "add": "Add a piece",
       "edit": "Edit",
       "empty": "No piece matches that. Clear the search to see them all.",
+      "intro": "Every piece on the site, with its price and whether it is still on the shelf. Open one to change its price, or mark it sold to take it off the site.",
       "name": "Name",
       "of": "of",
       "search": "Search by name or glaze",
@@ -134,10 +137,10 @@
   },
   "pages": {
     "cms": {
-      "title": "Pieces — Gốm Chu Đậu"
+      "title": "Pieces"
     },
     "cmspiece": {
-      "title": "A piece — Gốm Chu Đậu"
+      "title": "A piece"
     },
     "contact": {
       "description": "Phone, Zalo, email and where to find the studio in Chu Đậu, Thái Tân, Nam Sách, Hải Dương.",
@@ -145,18 +148,18 @@
       "label": "Reach the studio",
       "map": "The village",
       "sub": "We are at the kiln during studio hours. The quickest answer is the telephone.",
-      "title": "Contact — Gốm Chu Đậu"
+      "title": "Contact"
     },
     "piece": {
       "description": "The size, the glaze and the price of one piece from the studio in Chu Đậu, Thái Tân.",
-      "title": "A piece — Gốm Chu Đậu"
+      "title": "A piece"
     },
     "pieces": {
       "description": "Bowls, plates, vases and tea sets finished at the studio in Chu Đậu, Thái Tân, each with its size, its glaze and its price.",
       "heading": "The pieces on the shelf",
       "label": "Everything here",
       "sub": "Narrow them by kind or by glaze. Each one is a single piece with its own size and price.",
-      "title": "The pieces — Gốm Chu Đậu"
+      "title": "The pieces"
     },
     "signin": {
       "can": {
@@ -169,7 +172,7 @@
       "heading": "Sign in to manage the pieces",
       "label": "Studio only",
       "sub": "This is the studio's own door. Visitors do not need it.",
-      "title": "Sign in — Gốm Chu Đậu"
+      "title": "Sign in"
     }
   },
   "pieces": {
