@@ -42,7 +42,7 @@ export default function PiecePage() {
     return (
       <div className="mx-auto max-w-page px-[var(--gutter)]">
         <T k="pieces.missing" as="h1" className="text-[length:var(--size-h2)]" />
-        <Link to="/pieces" className="mt-[var(--space-6)] inline-flex items-center gap-2 text-accent">
+        <Link to="/pieces" className="mt-[var(--space-6)] inline-flex items-center gap-2 text-accent-strong">
           <Icon name="back" size={16} />
           <T k="pieces.back" />
         </Link>
@@ -87,7 +87,7 @@ export default function PiecePage() {
               <a
                 href={`tel:${tel}`}
                 data-testid="piece-call"
-                className="inline-flex items-center justify-center gap-[var(--space-3)] whitespace-nowrap bg-accent px-[var(--space-6)] py-[var(--space-4)] text-accent-ink"
+                className="inline-flex items-center justify-center gap-[var(--space-3)] whitespace-nowrap bg-accent-strong px-[var(--space-6)] py-[var(--space-4)] text-accent-ink"
               >
                 <Icon name="phone" size={18} />
                 <span className="tabular">{phone}</span>
@@ -99,7 +99,7 @@ export default function PiecePage() {
                 target="_blank"
                 rel="noreferrer"
                 data-testid="piece-zalo"
-                className="inline-flex items-center justify-center gap-[var(--space-3)] whitespace-nowrap border border-field px-[var(--space-6)] py-[var(--space-4)] text-ink hover:border-accent hover:text-accent"
+                className="inline-flex items-center justify-center gap-[var(--space-3)] whitespace-nowrap border border-field px-[var(--space-6)] py-[var(--space-4)] text-ink hover:border-accent hover:text-accent-strong"
               >
                 <Icon name="chat" size={18} />
                 <T k="pieces.zalo" />
