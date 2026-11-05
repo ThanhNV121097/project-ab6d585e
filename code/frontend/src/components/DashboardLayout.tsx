@@ -2,6 +2,7 @@ import { useEffect, useState, type ReactNode } from "react";
 import { createPortal } from "react-dom";
 import { NavLink } from "react-router-dom";
 import { allowed, useSession } from "../lib/session";
+import Icon from "./Icon";
 
 /**
  * The shell every page of a CMS sits in: a menu down the left, the work on
@@ -112,9 +113,9 @@ export default function DashboardLayout({ title, nav, actions, children, brand }
             onClick={() => setOpen(true)}
             aria-label="Sections"
             aria-expanded={open}
-            className="rounded border border-line px-2 py-1 text-ink lg:hidden"
+            className="flex h-10 w-10 items-center justify-center rounded border border-line text-ink lg:hidden"
           >
-            ☰
+            <Icon name={open ? "close" : "menu"} size={18} />
           </button>
           <h1 className="min-w-0 flex-1 truncate font-display text-xl text-ink">{title}</h1>
           {actions}
@@ -132,7 +133,7 @@ export default function DashboardLayout({ title, nav, actions, children, brand }
         createPortal(
           <div className="fixed inset-0 z-[60] lg:hidden">
             <button type="button" aria-label="Close" onClick={() => setOpen(false)} className="absolute inset-0 bg-ink/40" />
-            <div className="absolute inset-y-0 left-0 w-64 overflow-y-auto border-r border-line bg-surface">{menu}</div>
+            <div className="absolute inset-0 overflow-y-auto border-r border-line bg-surface">{menu}</div>
           </div>,
           document.body,
         )}
