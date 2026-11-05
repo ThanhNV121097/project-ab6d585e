@@ -34,24 +34,11 @@ pinned, and all of it off under `prefers-reduced-motion`.
 
 ## COMMITMENTS
 
-1. The home page opens with a photograph of the studio that runs to all four edges of the
-   screen — no gutter, no margin, no rounded corner — with the whole first screen in view
-   at 1440×790.
-2. The name, the village and the opening hours sit over that photograph on the left edge
-   of the grid; nothing on the home page's first screen is centred.
-3. Three pieces, cut out on a transparent ground, stand in a band across the foot of the
-   first screen so that each one crosses the edge between the photograph and the dark
-   ground below it, with its price set under it at 28px tabular.
-4. The ground is `#16110E` and the only colour that is not a neutral is `#C9521F`; it
-   appears on the price of an available piece, the primary button and the rule under a
-   section label, and nowhere else.
-5. Headings are set in Bricolage Grotesque at weight 400–500, h1 56px and h2 40px at
-   1440, tracking −0.03em — never bolder, never larger.
-6. Every price on the site is tabular and right-aligned: in a catalogue card it sits on
-   the right end of the hairline meta row, so the digits of a column of cards line up.
-7. A piece's own page gives the picture the full left half of the screen, bled off the
-   left edge, with size, glaze, kind and price beside it as a hairline-ruled spec list —
-   no card, no shadow, no centring.
-8. The private area has no marketing header, no hero and no footer: a menu down the left
-   at every width ≥1024px, and the pieces as a real sortable table with its total under
-   it.
+1. The home page's first screen is a photograph of the studio running to all four edges of the screen — no gutter, no margin, no rounded corner — and the whole screen is in view at 1440×790.
+2. The name, the village and the opening hours sit over that photograph on the left edge of the grid; nothing on the home page's first screen is centred.
+3. Three pieces, cut out on a transparent ground, stand in a band across the foot of the first screen, each crossing the edge between the photograph and the dark ground below it, with its price under it at 28px tabular.
+4. The ground is `#16110E` and the only non-neutral colour is `#C9521F`, used on an available piece's price, the primary button and the rule under a section label, and nowhere else.
+5. Headings are set in Bricolage Grotesque at weight 400–500, h1 56px and h2 40px at 1440, tracking −0.03em — never bolder, never larger.
+6. Every price is tabular and right-aligned: in a catalogue card it sits at the right end of the hairline meta row, so a column of cards lines its digits up.
+7. A piece's own page gives the photograph the left half of the screen, bled off the left edge, with size, glaze, kind and price beside it as a hairline-ruled spec list — no card, no shadow, no centring.
+8. The private area has no marketing header, no hero and no footer: a menu down the left at every width from 1024px up, and the pieces as a real sortable table with its total under it.
