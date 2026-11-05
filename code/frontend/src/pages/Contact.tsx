@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { T, useContent } from "../editable";
 import ContactForm from "../components/ContactForm";
 import MapEmbed from "../components/MapEmbed";
@@ -87,7 +88,7 @@ export default function Contact() {
   );
 }
 
-function Line({ icon, term, children }: { icon: "phone" | "chat" | "mail" | "address" | "hours"; term: React.ReactNode; children: React.ReactNode }) {
+function Line({ icon, term, children }: { icon: "phone" | "chat" | "mail" | "address" | "hours"; term: ReactNode; children: ReactNode }) {
   return (
     <div className="flex items-baseline justify-between gap-[var(--space-6)] border-b border-line py-[var(--space-4)]">
       <dt className="label flex items-center gap-[var(--space-2)] text-ink-soft">
