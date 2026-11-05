@@ -1,3 +1,31 @@
 {
-  "collections": {}
+  "collections": {
+    "pieces": {
+      "label": "Pieces",
+      "fields": [
+        { "key": "name", "label": "Name", "type": "text" },
+        { "key": "kind", "label": "Kind", "type": "text" },
+        { "key": "glaze", "label": "Glaze", "type": "text" },
+        { "key": "size", "label": "Size", "type": "text" },
+        { "key": "price", "label": "Price", "type": "price", "currency": "VND" },
+        { "key": "image", "label": "Photograph", "type": "image" },
+        { "key": "status", "label": "On the site", "type": "text" },
+        { "key": "detail", "label": "About this piece", "type": "longtext" }
+      ]
+    },
+    "accounts": {
+      "label": "Who may sign in",
+      "fields": [
+        { "key": "email", "label": "Email", "type": "text" },
+        { "key": "name", "label": "Name", "type": "text" },
+        { "key": "note", "label": "What this person may do", "type": "text", "private": true }
+      ]
+    },
+    "price_notes": {
+      "label": "What is said beside a price",
+      "fields": [
+        { "key": "note", "label": "The note", "type": "text" }
+      ]
+    }
+  }
 }
