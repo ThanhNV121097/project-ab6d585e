@@ -71,7 +71,9 @@ export default function PiecePage() {
 
           <div className="mt-[var(--space-8)] flex items-baseline justify-between gap-[var(--space-4)] border-t border-line pt-[var(--space-4)]">
             <T k="pieces.price" className="label text-ink-soft" />
-            <Price amount={item.price} sold={sold} size="large" className="font-display" />
+            <span data-testid="piece-price">
+              <Price amount={item.price} sold={sold} size="large" className="font-display" />
+            </span>
           </div>
           <dl className="border-b border-line">
             <Row term={words.kind} value={item.kind} icon="tag" />
@@ -105,9 +107,6 @@ export default function PiecePage() {
             )}
           </div>
           <T k="pieces.ask" as="p" className="mt-[var(--space-4)] max-w-[44ch] text-sm text-ink-soft" />
-          <p className="mt-[var(--space-2)] text-sm text-ink-soft" data-testid="piece-price">
-            <span className="tabular">{item.size}</span>
-          </p>
         </div>
       </div>
 
