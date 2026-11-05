@@ -37,6 +37,7 @@ export default function CmsPieces() {
     kind: useContent("pieces.kind"),
     glaze: useContent("pieces.glaze"),
     price: useContent("pieces.price"),
+    of: useContent("cms.pieces.of"),
   };
   const { items, total, pages, page, loading } = useCollection<Piece>("pieces", {
     where: { status: t.get("status") },
@@ -89,7 +90,7 @@ export default function CmsPieces() {
       </TableFilters>
 
       <p className="tabular text-sm text-ink-soft" data-testid="cms-total">
-        {total === 0 ? "0" : `${(page - 1) * t.size + 1}\u2013${Math.min(page * t.size, total)}`} of {total}
+        {`${total === 0 ? "0" : `${(page - 1) * t.size + 1}\u2013${Math.min(page * t.size, total)}`} ${words.of} ${total}`}
       </p>
 
       <DataTable<Piece>
