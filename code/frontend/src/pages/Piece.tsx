@@ -25,6 +25,14 @@ export default function PiecePage() {
   const zalo = useContent("contact.zalo");
   const tel = digits(phone);
   const chat = digits(zalo);
+  const words = {
+    kind: useContent("pieces.kind"),
+    glaze: useContent("pieces.glaze"),
+    size: useContent("pieces.size"),
+    state: useContent("pieces.state"),
+    sold: useContent("pieces.sold"),
+    here: useContent("pieces.here"),
+  };
   const { items: others } = useCollection<Piece>("pieces", {
     where: { kind: item?.kind ?? "", status: "available" },
     pageSize: 8,
@@ -66,10 +74,10 @@ export default function PiecePage() {
             <Price amount={item.price} sold={sold} size="large" className="font-display" />
           </div>
           <dl className="border-b border-line">
-            <Row term={useContent("pieces.kind")} value={item.kind} icon="tag" />
-            <Row term={useContent("pieces.glaze")} value={item.glaze} icon="quality" />
-            <Row term={useContent("pieces.size")} value={item.size} icon="package" />
-            <Row term={useContent("pieces.state")} value={sold ? useContent("pieces.sold") : useContent("pieces.here")} icon={sold ? "info" : "check"} />
+            <Row term={words.kind} value={item.kind} icon="tag" />
+            <Row term={words.glaze} value={item.glaze} icon="quality" />
+            <Row term={words.size} value={item.size} icon="package" />
+            <Row term={words.state} value={sold ? words.sold : words.here} icon={sold ? "info" : "check"} />
           </dl>
 
           <div className="mt-[var(--space-8)] flex flex-col gap-[var(--space-3)] sm:flex-row">
