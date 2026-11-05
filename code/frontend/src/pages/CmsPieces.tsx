@@ -60,7 +60,7 @@ export default function CmsPieces() {
           <Link
             to="/cms/new"
             data-testid="cms-add"
-            className="inline-flex items-center gap-2 bg-accent px-[var(--space-4)] py-[var(--space-2)] text-sm text-accent-ink"
+            className="inline-flex items-center gap-2 bg-accent-strong px-[var(--space-4)] py-[var(--space-2)] text-sm text-accent-ink"
           >
             <Icon name="plus" size={16} />
             {words.add}
@@ -127,7 +127,7 @@ export default function CmsPieces() {
         empty={words.empty}
         exportName={words.title}
         actions={(r) => (
-          <Link to={`/cms/${r.id}`} data-testid={`edit-${r.id}`} className="text-accent hover:underline">
+          <Link to={`/cms/${r.id}`} data-testid={`edit-${r.id}`} className="text-accent-strong hover:underline">
             {words.edit}
           </Link>
         )}
