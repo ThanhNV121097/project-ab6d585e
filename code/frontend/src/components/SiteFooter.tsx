@@ -33,7 +33,7 @@ export default function SiteFooter() {
               target="_blank"
               rel="noreferrer"
               aria-label={zaloLabel}
-              className="mt-[var(--space-6)] inline-flex text-ink-soft hover:text-ink"
+              className="mt-[var(--space-6)] inline-flex items-center text-ink-soft hover:text-ink"
             >
               <SocialIcon network="zalo" size={22} />
             </a>
@@ -45,7 +45,7 @@ export default function SiteFooter() {
             {tel && (
               <li className="flex items-center gap-[var(--space-3)]">
                 <Icon name="phone" size={16} className="text-accent" />
-                <a href={`tel:${tel}`} className="tabular text-ink hover:text-accent">{phone}</a>
+                <a href={`tel:${tel}`} className="tabular text-ink hover:text-accent-strong">{phone}</a>
               </li>
             )}
             {chat && (
