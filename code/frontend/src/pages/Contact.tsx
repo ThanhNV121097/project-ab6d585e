@@ -91,7 +91,7 @@ export default function Contact() {
 function Line({ icon, term, children }: { icon: "phone" | "chat" | "mail" | "address" | "hours"; term: ReactNode; children: ReactNode }) {
   return (
     <div className="flex items-baseline justify-between gap-[var(--space-6)] border-b border-line py-[var(--space-4)]">
-      <dt className="label flex items-center gap-[var(--space-2)] text-ink-soft">
+      <dt className="label flex shrink-0 items-center gap-[var(--space-2)] whitespace-nowrap text-ink-soft">
         <Icon name={icon} size={14} className="text-accent" />
         {term}
       </dt>
