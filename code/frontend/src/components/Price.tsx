@@ -13,7 +13,7 @@ export default function Price({ amount, sold = false, size = "base", className =
 }) {
   return (
     <span
-      className={`tabular whitespace-nowrap text-right ${sold ? "text-ink-soft line-through" : "text-accent"} ${className}`}
+      className={`tabular whitespace-nowrap text-right ${sold ? "text-ink-soft line-through" : "text-accent-strong"} ${className}`}
       style={size === "large" ? { fontSize: "var(--size-price)" } : undefined}
     >
       {formatPrice(amount)}
