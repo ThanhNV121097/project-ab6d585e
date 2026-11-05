@@ -54,6 +54,10 @@ export default function CmsPiece() {
     priceNote: useContent("cms.piece.pricenote"),
     intro: useContent("cms.piece.intro"),
     noPhoto: useContent("cms.piece.nophoto"),
+    tipsHeading: useContent("cms.piece.tips.heading"),
+    tip1: useContent("cms.piece.tips.1"),
+    tip2: useContent("cms.piece.tips.2"),
+    tip3: useContent("cms.piece.tips.3"),
   };
 
   useEffect(() => {
