@@ -55,7 +55,7 @@ export default function SignIn() {
           <Link
             to="/cms"
             data-testid="go-to-cms"
-            className="mt-[var(--space-8)] inline-flex items-center gap-[var(--space-3)] bg-accent px-[var(--space-6)] py-[var(--space-3)] text-accent-ink"
+            className="mt-[var(--space-8)] inline-flex items-center gap-[var(--space-3)] bg-accent-strong px-[var(--space-6)] py-[var(--space-3)] text-accent-ink"
           >
             <T k="pages.signin.continue" />
             <Icon name="arrow" size={16} />
@@ -78,11 +78,11 @@ export default function SignIn() {
               <T k="signin.password" className="text-ink-soft" />
               <input id="signin-password" name="password" type="password" autoComplete="current-password" className={field} />
             </label>
-            {problem && <p role="alert" className="text-sm text-accent">{problem}</p>}
+            {problem && <p role="alert" className="text-sm text-accent-strong">{problem}</p>}
             <button
               type="submit"
               data-testid="signin-submit"
-              className="self-start bg-accent px-[var(--space-8)] py-[var(--space-3)] text-accent-ink"
+              className="self-start bg-accent-strong px-[var(--space-8)] py-[var(--space-3)] text-accent-ink"
             >
               <T k="signin.submit" />
             </button>
