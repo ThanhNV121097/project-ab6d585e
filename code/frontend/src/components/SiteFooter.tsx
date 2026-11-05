@@ -18,6 +18,7 @@ export default function SiteFooter() {
   const email = useContent("contact.email");
   const address = useContent("contact.address");
   const hours = useContent("contact.hours");
+  const zaloLabel = useContent("contact.dock.zalo");
   const tel = digits(phone);
   const chat = digits(zalo);
   return (
@@ -31,7 +32,7 @@ export default function SiteFooter() {
               href={`https://zalo.me/${chat}`}
               target="_blank"
               rel="noreferrer"
-              aria-label={useContentLabel()}
+              aria-label={zaloLabel}
               className="mt-[var(--space-6)] inline-flex text-ink-soft hover:text-ink"
             >
               <SocialIcon network="zalo" size={22} />
@@ -96,8 +97,4 @@ export default function SiteFooter() {
       </div>
     </footer>
   );
-}
-
-function useContentLabel(): string {
-  return useContent("contact.dock.zalo");
 }
