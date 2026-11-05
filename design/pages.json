@@ -1,4 +1,10 @@
 [
-  { "path": "/directions-1", "name": "Fired in Thái Tân" },
-  { "path": "/directions-2", "name": "Thirty on the shelf" }
+  { "path": "/", "name": "Home" },
+  { "path": "/pieces", "name": "The pieces" },
+  { "path": "/pieces/:id", "name": "A piece", "example": "/pieces/bowl-men-ngoc-26" },
+  { "path": "/contact", "name": "Contact" },
+  { "path": "/sign-in", "name": "Sign in" },
+  { "path": "/cms", "name": "Pieces (private)", "auth": true },
+  { "path": "/cms/new", "name": "Add a piece", "auth": true },
+  { "path": "/cms/:id", "name": "Edit a piece", "example": "/cms/bowl-men-ngoc-26", "auth": true }
 ]
