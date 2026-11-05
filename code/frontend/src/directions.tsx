@@ -42,21 +42,21 @@ export function DirectionOne() {
       </section>
       <section className="d1__band">
         <article className="d1__piece">
-          <img src="/images/bowl.png" alt="Bát men lam" />
-          <h2>Bát men lam</h2>
-          <p className="d1__spec">Cobalt glaze · 14 cm</p>
+          <img src="/images/bowl.png" alt="Bát men kẻ" />
+          <h2>Bát men kẻ</h2>
+          <p className="d1__spec">Striped glaze · 14 cm</p>
           <p className="d1__price">480.000 ₫</p>
         </article>
         <article className="d1__piece">
-          <img src="/images/plate.png" alt="Đĩa men rạn" />
-          <h2>Đĩa men rạn</h2>
-          <p className="d1__spec">Crackle glaze · 26 cm</p>
+          <img src="/images/plate.png" alt="Đĩa men trắng" />
+          <h2>Đĩa men trắng</h2>
+          <p className="d1__spec">White glaze · 26 cm</p>
           <p className="d1__price">650.000 ₫</p>
         </article>
         <article className="d1__piece">
-          <img src="/images/tea-set.png" alt="Bộ ấm trà men lam" />
-          <h2>Bộ ấm trà men lam</h2>
-          <p className="d1__spec">Cobalt glaze · 5 pieces</p>
+          <img src="/images/tea-set.png" alt="Bộ ấm trà vẽ hoa" />
+          <h2>Bộ ấm trà vẽ hoa</h2>
+          <p className="d1__spec">Painted glaze · 5 pieces</p>
           <p className="d1__price">1.850.000 ₫</p>
         </article>
       </section>
@@ -87,26 +87,26 @@ export function DirectionTwo() {
           <p className="d2__caption">Off the wheel this week — thirty pieces, each one once</p>
         </div>
         <article className="d2__cell">
-          <div className="d2__pic"><img src="/images/bowl.png" alt="Bát men lam" /></div>
+          <div className="d2__pic"><img src="/images/bowl.png" alt="Bát men kẻ" /></div>
           <div className="d2__foot">
-            <h2 className="d2__piece">Bát men lam</h2>
-            <p className="d2__row"><span>Cobalt glaze</span><span className="d2__num">14 cm</span></p>
+            <h2 className="d2__piece">Bát men kẻ</h2>
+            <p className="d2__row"><span>Striped glaze</span><span className="d2__num">14 cm</span></p>
             <p className="d2__row"><span>Price</span><span className="d2__cost">480.000 ₫</span></p>
           </div>
         </article>
         <article className="d2__cell">
-          <div className="d2__pic"><img src="/images/plate.png" alt="Đĩa men rạn" /></div>
+          <div className="d2__pic"><img src="/images/plate.png" alt="Đĩa men trắng" /></div>
           <div className="d2__foot">
-            <h2 className="d2__piece">Đĩa men rạn</h2>
-            <p className="d2__row"><span>Crackle glaze</span><span className="d2__num">26 cm</span></p>
+            <h2 className="d2__piece">Đĩa men trắng</h2>
+            <p className="d2__row"><span>White glaze</span><span className="d2__num">26 cm</span></p>
             <p className="d2__row"><span>Price</span><span className="d2__cost">650.000 ₫</span></p>
           </div>
         </article>
         <article className="d2__cell">
-          <div className="d2__pic"><img src="/images/tea-set.png" alt="Bộ ấm trà men lam" /></div>
+          <div className="d2__pic"><img src="/images/tea-set.png" alt="Bộ ấm trà vẽ hoa" /></div>
           <div className="d2__foot">
-            <h2 className="d2__piece">Bộ ấm trà men lam</h2>
-            <p className="d2__row"><span>Cobalt glaze</span><span className="d2__num">5 pieces</span></p>
+            <h2 className="d2__piece">Bộ ấm trà vẽ hoa</h2>
+            <p className="d2__row"><span>Painted glaze</span><span className="d2__num">5 pieces</span></p>
             <p className="d2__row"><span>Price</span><span className="d2__cost">1.850.000 ₫</span></p>
           </div>
         </article>
