@@ -30,6 +30,11 @@ export default function App() {
   // is worse than a missing key: it looks answered.
   const cta = useContent("nav.cta.href") || "/";
   const [open, setOpen] = useState(false);
+  // The direction pages are judged on their own ground: no header, no footer,
+  // nothing of this shell around them. They go when a direction is chosen.
+  const path = window.location.pathname;
+  if (path === "/directions-1") return <DirectionOne />;
+  if (path === "/directions-2") return <DirectionTwo />;
   return (
     <div className="min-h-screen bg-ground text-ink font-body">
       <header className="mx-auto max-w-page px-[var(--gutter)] py-6 flex items-center justify-between">
