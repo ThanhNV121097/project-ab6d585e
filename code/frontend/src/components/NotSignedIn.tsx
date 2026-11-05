@@ -12,7 +12,7 @@ export default function NotSignedIn() {
         <Link
           to="/sign-in"
           data-testid="cms-sign-in"
-          className="mt-[var(--space-8)] inline-flex items-center gap-[var(--space-3)] bg-accent px-[var(--space-6)] py-[var(--space-3)] text-accent-ink"
+          className="mt-[var(--space-8)] inline-flex items-center gap-[var(--space-3)] bg-accent-strong px-[var(--space-6)] py-[var(--space-3)] text-accent-ink"
         >
           <Icon name="lock" size={16} />
           <T k="cms.locked.signin" />
