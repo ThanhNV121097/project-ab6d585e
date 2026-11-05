@@ -52,6 +52,8 @@ export default function CmsPiece() {
     markHere: useContent("cms.piece.markhere"),
     back: useContent("cms.piece.back"),
     priceNote: useContent("cms.piece.pricenote"),
+    intro: useContent("cms.piece.intro"),
+    noPhoto: useContent("cms.piece.nophoto"),
   };
 
   useEffect(() => {
@@ -103,7 +105,9 @@ export default function CmsPiece() {
         </p>
       )}
 
-      <form onSubmit={submit} className="grid gap-[var(--space-8)] lg:grid-cols-[1fr_18rem] lg:items-start">
+      <p className="max-w-[68ch] text-sm text-ink-soft">{words.intro}</p>
+
+      <form onSubmit={submit} className="grid gap-[var(--space-8)] lg:grid-cols-[1fr_22rem] lg:items-start">
         <div className="flex flex-col gap-[var(--space-4)]">
           <label className="flex flex-col gap-[var(--space-2)] text-sm">
             <span className="text-ink-soft">{words.name}</span>
@@ -183,13 +187,13 @@ export default function CmsPiece() {
         <div>
           <p className="label text-ink-soft">{words.photo}</p>
           <div className="mt-[var(--space-3)]">
-            <ProductImage
-              src={draft.image}
-              alt={draft.name || words.photo}
-              aspect="1/1"
-              slot={`/images/pieces-${draft.id ?? "new"}.png`}
-              caption={words.photoNote}
-            />
+            {draft.image ? (
+              <ProductImage src={draft.image} alt={draft.name || words.photo} aspect="1/1" />
+            ) : (
+              <p className="border border-line bg-surface px-[var(--space-4)] py-[var(--space-6)] text-sm text-ink-soft">
+                {words.noPhoto}
+              </p>
+            )}
           </div>
           <label className="mt-[var(--space-4)] flex flex-col gap-[var(--space-2)] text-sm">
             <span className="text-ink-soft">{words.photoNote}</span>
