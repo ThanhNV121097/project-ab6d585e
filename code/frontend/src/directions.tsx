@@ -1,3 +1,4 @@
+import SocialIcon from "./components/SocialIcon";
 import "./directions.css";
 
 /**
@@ -35,7 +36,9 @@ export function DirectionOne() {
           </p>
           <div className="d1__acts">
             <a className="d1__btn" href={TEL}>Call {PHONE}</a>
-            <a className="d1__btn d1__btn--ghost" href={ZALO}>Message on Zalo</a>
+            <a className="d1__btn d1__btn--ghost" href={ZALO} aria-label="Message us on Zalo">
+              <SocialIcon network="zalo" size={18} />Message us
+            </a>
             <span className="d1__hours">8:00–17:00, Mon–Sat</span>
           </div>
         </div>
@@ -72,7 +75,9 @@ export function DirectionTwo() {
         <h1 className="d2__name">Gốm Chu Đậu</h1>
         <div className="d2__acts">
           <a className="d2__btn" href={TEL}>Call {PHONE}</a>
-          <a className="d2__btn d2__btn--ghost" href={ZALO}>Zalo</a>
+          <a className="d2__btn d2__btn--ghost d2__btn--icon" href={ZALO} aria-label="Message us on Zalo">
+            <SocialIcon network="zalo" size={20} />
+          </a>
         </div>
       </header>
       <div className="d2__meta">
