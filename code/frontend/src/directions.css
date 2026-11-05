@@ -44,7 +44,7 @@
   font-size: 15px; font-weight: 500; border: 1px solid #C9521F; white-space: nowrap;
 }
 .d1__btn--ghost { background: transparent; color: #F2EBE3; border-color: rgba(242,235,227,0.42); }
-.d1__hours { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: #C6B5A5; margin-left: 6px; }
+.d1__hours { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: #C6B5A5; margin-left: 6px; white-space: nowrap; }
 
 .d1__band {
   background: #221A15; border-top: 1px solid rgba(242,235,227,0.14);
@@ -132,7 +132,7 @@
 }
 .d2__bottom {
   display: flex; justify-content: space-between; align-items: center;
-  border-top: var(--l); padding: 14px 56px;
+  border-top: var(--l); padding: 14px 56px 14px 56px; padding-right: 220px;
   font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #5B6171;
 }
 .d2__bottom b { color: #171A21; font-weight: 500; font-variant-numeric: tabular-nums; letter-spacing: 0.08em; }
