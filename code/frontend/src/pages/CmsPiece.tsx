@@ -199,6 +199,17 @@ export default function CmsPiece() {
             <span className="text-ink-soft">{words.photoNote}</span>
             <input id="piece-image" value={draft.image} onChange={(e) => set("image", e.target.value)} className={FIELD} />
           </label>
+          <div className="mt-[var(--space-6)] border-t border-line pt-[var(--space-4)]">
+            <p className="label text-ink-soft">{words.tipsHeading}</p>
+            <ul className="mt-[var(--space-3)] flex flex-col gap-[var(--space-2)] text-sm text-ink-soft">
+              {[words.tip1, words.tip2, words.tip3].map((tip) => (
+                <li key={tip} className="flex items-start gap-[var(--space-2)]">
+                  <Icon name="photo" size={14} className="mt-0.5 text-accent" />
+                  {tip}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </form>
     </DashboardLayout>
