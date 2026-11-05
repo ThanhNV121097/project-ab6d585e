@@ -1,60 +1,47 @@
-/* The design's tokens. Every colour, face and shape on the site is one of
-   these, so the owner changes the whole site by changing a value here — in
-   the Studio, without a rebuild. Components never carry a raw colour.
+/* Gốm Chu Đậu — "Fired in Thái Tân", the direction the owner chose.
+   Every colour, face and shape on the site is one of these, so the owner
+   changes the whole site by changing a value here.
 
-   THE PALETTE BELOW IS A PLACEHOLDER AND CI REFUSES IT. Every value still
-   marked UNSET has to be replaced with this business's own — in the light
-   block here and in the two dark blocks at the foot of the file — and the
-   UNSET marker removed with it.
-
-   It used to ship a finished cream-and-clay palette, and that is exactly why
-   it has to go. Three designs in a row — a golf club, a coffee roastery and
-   an audio shop — came back with it: one of them byte for byte, the other two
-   within a few per cent. A default good enough to ship is the strongest
-   anchor there is, because changing it is risk with no reward. Nothing was
-   wrong with those colours except that nobody chose them. */
+   ONE MODE. This palette is a dark one — a kiln-dark ground so the glazes in
+   the photographs are the only colour on the screen — and it is the site's
+   only mode. There is no [data-theme] block, no prefers-color-scheme branch
+   and no switch in the header. */
 :root {
-  --ground: #E7E5E4; /* UNSET */
-  --surface: #FFFFFF; /* UNSET */
-  --ink: #1C1917; /* UNSET */
-  --ink-soft: #57534E; /* UNSET */
-  --accent: #7C3AED; /* UNSET */
-  --accent-ink: #FFFFFF; /* UNSET */
-  --line: rgba(28, 25, 23, 0.12); /* UNSET */
-  /* The edge of a form field, which is NOT --line. --line is a hairline
-     between sections and is meant to be nearly invisible; an input has to be
-     findable. One run set --line to #2A2B30 on a #0B0B0C ground — correct
-     for a divider — and every field on the site came out at 1.39:1 against
-     the page, ten defects the walk reported as field-edge. Give this one at
-     least 3:1 against --ground. */
-  --field-line: rgba(28, 25, 23, 0.45); /* UNSET */
-  /* One mode. A site has the palette its chosen direction settled on and no
-     other: a second mode is a second design, and the ground nobody chose is
-     the ground nobody checks. color-scheme tells the browser which it is, so
-     form controls, scrollbars and the page's own background match. Set it to
-     dark when this palette is a dark one. */
-  color-scheme: light;
+  --ground: #16110E;
+  --surface: #221A15;
+  --ink: #F2EBE3;
+  --ink-soft: #A79687;
+  --accent: #C9521F;
+  --accent-ink: #16110E;
+  --line: rgba(242, 235, 227, 0.14);
+  /* The edge of a form field: 3:1 against --ground, so an input is findable
+     on a near-black page where --line is deliberately almost invisible. */
+  --field-line: rgba(242, 235, 227, 0.42);
+  color-scheme: dark;
 
-  /* House style: one clean sans, headings confident but not heavy — an h1
-     at most 76px and an h2 at most 52px at 1440px. Inter is the fallback a
-     design falls back TO, not the one it falls into by saying nothing: name
-     the face this business uses, even when the answer is Inter. */
-  --font-display: "Inter"; /* UNSET */
-  --font-body: "Inter"; /* UNSET */
-  --weight-display: 500;
-  --tracking-display: -0.02em;
-  /* The scale a landing page wants, which is not the scale a shop wants.
-     Choose both for what this site has to fit; 76px / 52px is the ceiling,
-     not the target. */
-  --size-h1: clamp(2.5rem, 5.4vw, 4.75rem); /* UNSET */
-  --size-h2: clamp(2rem, 3.6vw, 3.25rem); /* UNSET */
+  /* Bricolage Grotesque is this direction's one unlock from the house style's
+     clean-sans default: a grotesk with a drawn, slightly irregular hand,
+     because the pieces are thrown by one person and Inter says nothing about
+     a hand. Body text is Inter, which it is distinct from at every size. */
+  --font-display: "Bricolage Grotesque";
+  --font-body: "Inter";
+  --weight-display: 450;
+  --tracking-display: -0.03em;
+  /* 56 / 40 at 1440, not the 76 / 52 ceiling: the first screen has to carry
+     the studio, three pieces, their prices and a phone number. */
+  --size-h1: clamp(2.25rem, 3.9vw, 3.5rem);
+  --size-h2: clamp(1.75rem, 2.8vw, 2.5rem);
+  /* A price is the most read word on this site, so it has a size of its own:
+     28px at 1440, tabular wherever it is drawn. */
+  --size-price: clamp(1.25rem, 1.95vw, 1.75rem);
+  /* A label: 11px small-caps at 0.18em. */
+  --size-label: 0.6875rem;
+  --tracking-label: 0.18em;
 
-  --radius: 12px;
-  --radius-sm: 6px;
+  --radius: 2px;
+  --radius-sm: 2px;
   --radius-pill: 999px;
 
-  /* Spacing, shadow and motion: one scale each, so a story can always name a
-     value. A category the design does not use stays defined and unused. */
   --space-1: 4px;
   --space-2: 8px;
   --space-3: 12px;
@@ -63,32 +50,68 @@
   --space-8: 32px;
   --space-12: 48px;
   --space-16: 64px;
-  --shadow-sm: 0 1px 2px rgba(27, 25, 23, 0.06);
-  --shadow-md: 0 8px 24px -12px rgba(27, 25, 23, 0.25);
-  --duration-fast: 120ms;
-  --duration-base: 220ms;
-  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+  /* A dark page carries no soft drop shadow: depth here is the hairline and
+     the lit tile. The two kept are the ones the scaffold's own controls use. */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 16px 40px -20px rgba(0, 0, 0, 0.8);
+  --duration-fast: 140ms;
+  --duration-base: 600ms;
+  --ease-out: cubic-bezier(0.22, 0.75, 0.2, 1);
 
-  --page: 1160px;
+  --page: 1280px;
   --gutter: clamp(20px, 5.5vw, 72px);
-  --header-h: 64px;
-  /* What a page keeps clear at its foot below 1024px while ContactDock
-     floats there: the 56px buttons, their 16px offset and a margin. */
+  --header-h: 72px;
   --dock-space: calc(88px + env(safe-area-inset-bottom, 0px));
-  /* The tile behind a product picture (ProductImage). Light in both modes:
-     the tools cut products out of a white studio backdrop, and a white or
-     silver product cut out onto a dark ground loses its shading. */
-  --product-ground: #F2F2F4;
-  /* Words drawn ON that tile — a <Picture> block's caption where a product
-     has no photograph yet. The tile is light in both modes, so --ink-soft
-     (light on a dark site) was invisible there. */
-  --product-ground-ink: #57534E;
+  /* The tile a cut-out piece stands on. Warm and light against the kiln-dark
+     page: the pieces are the light in this design, and a celadon bowl cut out
+     straight onto #16110E loses its glaze. */
+  --product-ground: #EFE7DD;
+  --product-ground-ink: #6B5B4D;
 
-  /* The ground and the ink of a <Picture> block standing where a photograph
-     is not there yet. The site's own surface by default; <ProductImage>
-     re-points them at its light tile, because a block painted --surface
-     inside a lit tile was a dark hole in the grid. */
   --picture-ground: var(--surface);
   --picture-ink: var(--ink-soft);
 }
 
+/* Headings weigh what this design says they weigh: Tailwind's preflight sets
+   every heading to font-weight: inherit. */
+h1, h2, h3, h4 {
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: var(--weight-display);
+  letter-spacing: var(--tracking-display);
+  line-height: 1.05;
+}
+
+/* Numbers line up: every price, size and table figure. */
+.tabular {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+}
+
+/* A section label: 11px, small-caps, letterspaced, with the accent rule under
+   it. The rule is one of the three places the accent is allowed. */
+.label {
+  font-size: var(--size-label);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+/* The load moment and the section reveals, in CSS so they cost nothing.
+   Motion is off entirely under prefers-reduced-motion. */
+@keyframes rise {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: none; }
+}
+
+.rise {
+  animation: rise var(--duration-base) var(--ease-out) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rise {
+    animation: none;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
