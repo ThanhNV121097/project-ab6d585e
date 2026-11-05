@@ -27,7 +27,7 @@ export default function PieceCard({ piece, eager = false }: { piece: Piece; eage
       </div>
       <div className="mt-[var(--space-3)] flex items-baseline justify-between gap-[var(--space-4)] border-t border-line pt-[var(--space-3)]">
         <span className="min-w-0">
-          <span className="block truncate font-display text-base text-ink group-hover:text-accent">{piece.name}</span>
+          <span className="block truncate font-display text-base text-ink group-hover:text-accent-strong">{piece.name}</span>
           <span className="mt-1 block truncate text-sm text-ink-soft">{sold ? soldWord : piece.glaze}</span>
         </span>
         <Price amount={piece.price} sold={sold} />
