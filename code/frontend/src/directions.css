@@ -11,7 +11,7 @@
   background: #16110E; color: #F2EBE3;
   font-family: Inter, system-ui, sans-serif;
 }
-.d1 .dir__tag { top: 0; right: 0; background: #C9521F; color: #16110E; }
+.d1 .dir__tag { top: 0; right: 0; background: #16110E; color: #E8824F; border-left: 1px solid rgba(232,130,79,0.5); border-bottom: 1px solid rgba(232,130,79,0.5); }
 .d1__hero {
   position: relative; flex: 1 1 auto; min-height: 420px;
   display: flex; align-items: flex-end; overflow: hidden;
@@ -40,8 +40,8 @@
 .d1__acts { display: flex; gap: 10px; margin-top: 26px; align-items: center; }
 .d1__btn {
   display: inline-flex; align-items: center; gap: 8px; height: 46px; padding: 0 20px;
-  border-radius: 999px; background: #C9521F; color: #FFF6F0; text-decoration: none;
-  font-size: 15px; font-weight: 500; border: 1px solid #C9521F; white-space: nowrap;
+  border-radius: 999px; background: #A8380F; color: #FFF6F0; text-decoration: none;
+  font-size: 15px; font-weight: 500; border: 1px solid #A8380F; white-space: nowrap;
 }
 .d1__btn--ghost { background: transparent; color: #F2EBE3; border-color: rgba(242,235,227,0.42); }
 .d1__hours { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: #C6B5A5; margin-left: 6px; white-space: nowrap; }
@@ -89,6 +89,7 @@
   border: 1px solid #1B3C8C; white-space: nowrap;
 }
 .d2__btn--ghost { background: transparent; color: #171A21; border-color: rgba(23,26,33,0.45); }
+.d2__btn--icon { width: 42px; padding: 0; justify-content: center; }
 .d2__meta { display: flex; border-bottom: var(--l); }
 .d2__meta span {
   font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: #5B6171;
