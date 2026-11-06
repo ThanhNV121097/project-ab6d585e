@@ -128,18 +128,5 @@
     "detail": "A lidded jar for leaf, thrown heavy so it keeps the dark and does not tip when the lid comes off.",
     "_source": "assumed",
     "_picture": "stand-in"
-  },
-  {
-    "id": "cup-tall-glaze",
-    "name": "Cup and saucer, white glaze",
-    "kind": "Tea set",
-    "glaze": "Men trắng white glaze",
-    "size": "Cup 7 cm high, saucer 15 cm across",
-    "price": 320000,
-    "image": "/images/pieces-cup-tall-glaze.png",
-    "status": "available",
-    "detail": "A cup thrown thin at the lip with a pulled handle, and its own saucer turned to take the foot.",
-    "_source": "assumed",
-    "_picture": "stand-in"
   }
 ]
