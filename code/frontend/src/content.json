@@ -77,15 +77,6 @@
     "signin": "Studio sign-in",
     "visit": "Reach us"
   },
-  "hero": {
-    "cta": {
-      "href": "#contact",
-      "label": "Get in touch"
-    },
-    "eyebrow": "",
-    "headline": "A headline of a few words",
-    "sub": "One line under it, and no more."
-  },
   "home": {
     "ask": {
       "body": "We will say what it weighs, how it was fired and whether it is still here. Nothing is bought or paid for on this site.",
@@ -110,7 +101,7 @@
       },
       "glaze": {
         "term": "Glazes",
-        "value": "Hoa lam, men ngọc, men rạn"
+        "value": "Hoa lam, men ngọc, men rạn, men màu"
       },
       "heading": "Why it costs what it costs",
       "label": "The kiln"
@@ -123,10 +114,6 @@
     }
   },
   "nav": {
-    "cta": {
-      "href": "/contact",
-      "label": "Call the studio"
-    },
     "links": [
       {
         "href": "/pieces",
