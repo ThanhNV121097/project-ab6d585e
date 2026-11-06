@@ -65,32 +65,6 @@
     "_picture": "stand-in"
   },
   {
-    "id": "plate-men-ngoc-26",
-    "name": "White glaze bowl, 24 cm",
-    "kind": "Bowl",
-    "glaze": "Men trắng white glaze",
-    "size": "24 cm across, 9 cm high",
-    "price": 620000,
-    "image": "/images/pieces-plate-men-ngoc-26.jpg",
-    "status": "available",
-    "detail": "A plain white glaze over pale stoneware, left glossy so the throwing rings still read.",
-    "_source": "assumed",
-    "_picture": "stand-in"
-  },
-  {
-    "id": "plate-side-20",
-    "name": "White glaze bowl, 18 cm",
-    "kind": "Bowl",
-    "glaze": "Men trắng white glaze",
-    "size": "18 cm across, 7 cm high",
-    "price": 430000,
-    "image": "/images/pieces-plate-side-20.jpg",
-    "status": "sold",
-    "detail": "The smaller of the white bowls, fired in the same load as the 24 cm one.",
-    "_source": "assumed",
-    "_picture": "stand-in"
-  },
-  {
     "id": "vase-pear-34",
     "name": "Pear vase, 34 cm",
     "kind": "Vase",
