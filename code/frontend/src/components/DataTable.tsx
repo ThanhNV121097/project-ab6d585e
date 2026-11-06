@@ -256,7 +256,7 @@ function PageButton({ children, onClick, disabled, current, label }: {
       disabled={disabled}
       aria-label={label}
       aria-current={current ? "page" : undefined}
-      className={`min-w-[2rem] rounded px-2 py-1 ${current ? "bg-accent text-accent-ink" : "text-ink hover:bg-ground"} disabled:opacity-40`}
+      className={`min-w-[2rem] rounded px-2 py-1 ${current ? "bg-accent-strong text-accent-ink" : "text-ink hover:bg-ground"} disabled:opacity-40`}
     >
       {children}
     </button>

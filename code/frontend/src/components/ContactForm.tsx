@@ -59,7 +59,7 @@ export default function ContactForm({ fields = [], className = "" }: { fields?: 
       <input name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="absolute -left-[9999px] h-px w-px opacity-0" />
       {state === "failed" && <p role="alert" className="text-sm text-ink">{problem}</p>}
       {!canSend && <p className="text-sm text-ink-soft">{offline}</p>}
-      <button type="submit" disabled={state === "sending"} className="self-start rounded bg-accent px-6 py-3 text-accent-ink disabled:opacity-60">
+      <button type="submit" data-testid="contact-send" disabled={state === "sending"} className="self-start rounded bg-accent-strong px-6 py-3 text-accent-ink disabled:opacity-60">
         <T k={state === "sending" ? "contact.form.sending" : "contact.form.send"} />
       </button>
     </form>

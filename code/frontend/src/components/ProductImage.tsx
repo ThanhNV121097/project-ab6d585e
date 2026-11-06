@@ -53,7 +53,7 @@ export default function ProductImage({ src, alt, aspect = "1/1", slot, caption, 
       {src ? (
         <Picture src={src} alt={alt} caption={caption} width={width} height={height} fit="contain"
           loading={eager ? "eager" : "lazy"}
-          className="absolute inset-[8%] h-[84%] w-[84%] object-contain" />
+          className="absolute inset-[6%] h-[88%] w-[88%] object-contain" />
       ) : (
         <Picture src={slot ?? ""} alt={alt} caption={caption} fit="contain"
           className="absolute inset-0 h-full w-full" />

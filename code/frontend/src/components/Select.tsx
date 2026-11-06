@@ -174,7 +174,7 @@ export default function Select({
               onMouseEnter={() => setActive(i)}
               onClick={() => choose(i)}
               className={`cursor-pointer px-3 py-2 text-sm ${
-                i === active ? "bg-accent text-accent-ink" : "text-ink"
+                i === active ? "bg-accent-strong text-accent-ink" : "text-ink"
               }`}
             >
               {o.label}

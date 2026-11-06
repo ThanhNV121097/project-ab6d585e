@@ -1,0 +1,51 @@
+[
+  {
+    "name": "See a piece on the home page and ring about it",
+    "steps": [
+      { "action": "open", "path": "/" },
+      { "action": "click", "selector": "[data-testid='hero-piece-0']" },
+      { "action": "expect", "selector": "[data-testid='piece-price']" },
+      { "action": "expect", "selector": "[data-testid='piece-call']", "text": "0220 3882 345" }
+    ]
+  },
+  {
+    "name": "Narrow the pieces to tea sets",
+    "steps": [
+      { "action": "open", "path": "/pieces" },
+      { "action": "click", "selector": "[data-testid='kind-tea-set']" },
+      { "action": "expect", "selector": "[data-testid='pieces-total']", "text": "tea set" }
+    ]
+  },
+  {
+    "name": "Write to the studio about a piece",
+    "steps": [
+      { "action": "open", "path": "/contact" },
+      { "action": "type", "selector": "input[name='name']", "value": "Trang" },
+      { "action": "type", "selector": "input[name='reply_to']", "value": "0912 000 111" },
+      { "action": "type", "selector": "textarea[name='message']", "value": "Is the 26 cm celadon bowl still here?" },
+      { "action": "expect", "selector": "[data-testid='contact-send']", "text": "Send" }
+    ]
+  },
+  {
+    "name": "Take a sold piece off the site",
+    "auth": true,
+    "steps": [
+      { "action": "open", "path": "/cms" },
+      { "action": "expect", "selector": "[data-testid='cms-total']", "text": "of" },
+      { "action": "click", "selector": "[data-testid='edit-bowl-men-ngoc-26']" },
+      { "action": "click", "selector": "[data-testid='mark-sold']" },
+      { "action": "expect", "selector": "[data-testid='piece-saved']", "text": "Sold" }
+    ]
+  },
+  {
+    "name": "Add a new piece with its price",
+    "auth": true,
+    "steps": [
+      { "action": "open", "path": "/cms/new" },
+      { "action": "type", "selector": "#piece-name", "value": "Lotus bowl, 24 cm" },
+      { "action": "type", "selector": "#piece-price", "value": "850000" },
+      { "action": "click", "selector": "[data-testid='piece-save']" },
+      { "action": "expect", "selector": "[data-testid='piece-saved']", "text": "Lotus bowl, 24 cm" }
+    ]
+  }
+]

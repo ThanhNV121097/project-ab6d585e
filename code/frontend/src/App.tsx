@@ -1,61 +1,63 @@
-import { useState } from "react";
-import { Link, Route, Routes } from "react-router-dom";
-import { T, useList, useContent } from "./editable";
+import { useEffect } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
-import Logo from "./components/Logo";
-import MenuToggle from "./components/MenuToggle";
+import Pieces from "./pages/Pieces";
+import PiecePage from "./pages/Piece";
+import Contact from "./pages/Contact";
+import SignIn from "./pages/SignIn";
+import CmsPieces from "./pages/CmsPieces";
+import CmsPiece from "./pages/CmsPiece";
+import SiteHeader from "./components/SiteHeader";
+import SiteFooter from "./components/SiteFooter";
 import ContactDock from "./components/ContactDock";
-import PhotoCredits from "./components/PhotoCredits";
+import { PageViews } from "./site";
 
 /**
- * The shell the design replaces.
- *
- * This file is a placeholder so the scaffold builds and runs before the
- * design exists. The team rewrites it and adds components under
- * src/components/; what must stay is the rule every component follows: the
- * words come from content.json through <T/>, the colours from theme.css.
- *
- * The site has pages, not only a home page: each is a file in src/pages/ and
- * a <Route> below, sharing the header and footer. The footer keeps
- * <PhotoCredits/>: the stock photos' credits, which their licences ask for.
+ * The site. The public pages share the header and the footer; the private
+ * area is an application and brings its own shell (DashboardLayout), so it
+ * sits outside them.
  */
 export default function App() {
-  const links = useList<{ label: string; href: string }>("nav.links");
-  const name = useContent("site.name");
-  // The CTA's own target, from content.json. It used to be href="#contact"
-  // written into the JSX while `nav.cta.href` sat in the file unread — so a
-  // design that moved contact onto a page of its own changed the key, nothing
-  // read it, and the header's one button scrolled nowhere. A key nothing reads
-  // is worse than a missing key: it looks answered.
-  const cta = useContent("nav.cta.href") || "/";
-  const [open, setOpen] = useState(false);
   return (
-    <div className="min-h-screen bg-ground text-ink font-body">
-      <header className="mx-auto max-w-page px-[var(--gutter)] py-6 flex items-center justify-between">
-        <Link to="/" aria-label={name}><Logo /></Link>
-        <nav className="hidden lg:flex items-center gap-6 text-sm">
-          {links.map((l, i) => <T key={i} k={`nav.links.${i}.label`} as="a" href={l.href} />)}
-          <T k="nav.cta.label" as="a" href={cta} className="rounded bg-accent px-4 py-2 text-accent-ink" />
-        </nav>
-        <div className="flex items-center gap-1 lg:hidden">
-          <MenuToggle open={open} onToggle={() => setOpen((o) => !o)} />
-        </div>
-      </header>
-      {open && (
-        <nav className="fixed inset-0 top-[88px] z-40 flex flex-col gap-6 bg-ground px-[var(--gutter)] py-10 text-2xl lg:hidden">
-          {links.map((l, i) => <T key={i} k={`nav.links.${i}.label`} as="a" href={l.href} />)}
-        </nav>
-      )}
-      <main className="mx-auto max-w-page px-[var(--gutter)] py-24">
+    <>
+      <PageViews />
+      <ScrollToTop />
+      <Routes>
+        <Route path="/cms" element={<CmsPieces />} />
+        <Route path="/cms/new" element={<CmsPiece />} />
+        <Route path="/cms/:id" element={<CmsPiece />} />
+        <Route path="*" element={<PublicSite />} />
+      </Routes>
+    </>
+  );
+}
+
+function PublicSite() {
+  const { pathname } = useLocation();
+  const hero = pathname === "/";
+  return (
+    <div className="flex min-h-screen flex-col bg-ground font-body text-ink">
+      <SiteHeader over={hero} />
+      <main className={`flex-1 ${hero ? "" : "pt-[var(--space-12)]"}`}>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/pieces" element={<Pieces />} />
+          <Route path="/pieces/:id" element={<PiecePage />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/sign-in" element={<SignIn />} />
+          <Route path="*" element={<Pieces />} />
         </Routes>
       </main>
-      <footer className="mx-auto max-w-page px-[var(--gutter)] py-12 text-sm text-ink-soft border-t border-line">
-        <T k="footer.line" /> · {name}
-        <PhotoCredits className="mt-3" />
-      </footer>
+      <SiteFooter />
       <ContactDock />
     </div>
   );
+}
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
 }
