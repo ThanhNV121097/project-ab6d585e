@@ -16,7 +16,7 @@ import { cmsNav } from "./cmsNav";
 import type { Piece } from "../types";
 
 const KINDS = ["Bowl", "Plate", "Vase", "Tea set"];
-const GLAZES = ["Hoa lam blue-and-white", "Men ngọc celadon", "Men rạn crackle", "Men trắng white glaze"];
+const GLAZES = ["Hoa lam blue-and-white", "Men ngọc celadon", "Men rạn crackle", "Men màu painted colour"];
 
 const FIELD =
   "w-full appearance-none rounded border border-field bg-ground px-[var(--space-4)] py-[var(--space-3)] text-ink";
