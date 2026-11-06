@@ -45,7 +45,7 @@
     "glaze": "Men trắng white glaze",
     "size": "12 cm across, 6 cm high",
     "price": 180000,
-    "image": "/images/pieces-bowl-rice-12.jpg",
+    "image": "/images/pieces-bowl-rice-12.png",
     "status": "available",
     "detail": "An everyday bowl for the family table, thrown to the same height as the others so they stack.",
     "_source": "assumed",
@@ -157,14 +157,14 @@
   },
   {
     "id": "cup-tall-glaze",
-    "name": "Tall mug, 11 cm",
+    "name": "Cup and saucer, white glaze",
     "kind": "Tea set",
     "glaze": "Men trắng white glaze",
-    "size": "11 cm high, holds 300 ml",
+    "size": "Cup 7 cm high, saucer 15 cm across",
     "price": 320000,
-    "image": "/images/pieces-cup-tall-glaze.jpg",
+    "image": "/images/pieces-cup-tall-glaze.png",
     "status": "available",
-    "detail": "Thrown thin at the lip and left heavy at the base, with a pulled handle for coffee as much as for tea.",
+    "detail": "A cup thrown thin at the lip with a pulled handle, and its own saucer turned to take the foot.",
     "_source": "assumed",
     "_picture": "stand-in"
   }
