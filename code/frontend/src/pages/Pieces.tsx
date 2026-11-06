@@ -9,7 +9,7 @@ import { usePageMeta } from "../seo";
 import type { Piece } from "../types";
 
 const KINDS = ["Bowl", "Plate", "Vase", "Tea set"] as const;
-const GLAZES = ["Hoa lam blue-and-white", "Men ngọc celadon", "Men rạn crackle"] as const;
+const GLAZES = ["Hoa lam blue-and-white", "Men ngọc celadon", "Men rạn crackle", "Men trắng white glaze"] as const;
 
 /**
  * Everything on the shelf. The filters stand in a rail down the left at
