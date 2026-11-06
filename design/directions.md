@@ -18,6 +18,10 @@ sold piece leaves the site rather than going out of stock.
 
 The two directions below are those two visitors. They are not two styles.
 
+CHOSEN: Fired in Thái Tân — most people who ring this studio are buying one piece that
+matters, and they decide because it is this kiln's; the kiln-dark ground makes the glazes
+the only colour on the screen, so a celadon bowl is the light rather than decoration.
+
 ## Fired in Thái Tân
 
 - **Suits you if:** most of the people who ring you are buying one piece as something
