@@ -122,7 +122,7 @@ export default function Home() {
 function Hero({ three, phone, tel, hours }: { three: Piece[]; phone: string; tel: string; hours: string }) {
   return (
     <section className="relative">
-      <div className="relative h-[min(86svh,46rem)] min-h-[32rem] w-full overflow-hidden">
+      <div className="relative h-[min(74svh,42rem)] min-h-[30rem] w-full overflow-hidden">
         <Picture
           src="/images/studio-hero.jpg"
           alt="The studio in Chu Đậu, Thái Tân, with finished pieces on the shelves"
@@ -133,7 +133,7 @@ function Hero({ three, phone, tel, hours }: { three: Piece[]; phone: string; tel
         />
         <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-black/20" />
         <div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/90 to-transparent" />
-        <div className="rise absolute inset-x-0 bottom-[var(--space-16)] top-[var(--header-h)] mx-auto flex max-w-page flex-col justify-center px-[var(--gutter)]">
+        <div className="rise absolute inset-x-0 bottom-[var(--space-16)] top-[var(--header-h)] lg:bottom-[13rem] mx-auto flex max-w-page flex-col justify-center px-[var(--gutter)]">
           <SectionLabel k="home.hero.label" />
           <T k="home.hero.headline" as="h1" className="mt-[var(--space-4)] max-w-[14ch] text-[length:var(--size-h1)] text-ink" />
           <T k="home.hero.sub" as="p" className="mt-[var(--space-4)] max-w-[44ch] text-ink-soft" />
@@ -154,8 +154,8 @@ function Hero({ three, phone, tel, hours }: { three: Piece[]; phone: string; tel
 
       {/* The band: three cut-out pieces standing half on the photograph and
           half on the ground, with the price set large under each. */}
-      <div className="relative z-10 mx-auto -mt-[7rem] max-w-page px-[var(--gutter)] sm:-mt-[9rem] lg:-mt-[13rem]">
-        <ul className="grid grid-cols-3 gap-[var(--space-4)] sm:gap-[var(--space-8)]">
+      <div className="relative z-10 mx-auto -mt-[7rem] max-w-page px-[var(--gutter)] sm:-mt-[9rem]">
+        <ul className="grid grid-cols-3 gap-[var(--space-4)] sm:gap-[var(--space-8)] lg:ml-auto lg:max-w-[46rem]">
           {three.map((p, i) => (
             <li key={p.id} data-record={`pieces:${p.id}`} className="flex">
               <Link to={`/pieces/${p.id}`} data-testid={`hero-piece-${i}`} className="group flex w-full flex-col">
