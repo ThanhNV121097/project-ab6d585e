@@ -161,7 +161,7 @@ function Hero({ three, phone, tel, hours }: { three: Piece[]; phone: string; tel
               <Link to={`/pieces/${p.id}`} data-testid={`hero-piece-${i}`} className="group block">
                 <ProductImage src={p.image} alt={p.name} aspect="1/1" eager slot={`/images/pieces-${p.id}.png`} />
                 <span className="mt-[var(--space-3)] flex flex-col gap-[var(--space-1)] border-t border-line pt-[var(--space-3)] sm:flex-row sm:items-baseline sm:justify-between sm:gap-[var(--space-2)]">
-                  <span className="min-w-0 truncate font-display text-sm text-ink group-hover:text-accent sm:text-base">{p.name}</span>
+                  <span className="min-w-0 font-display text-sm text-ink group-hover:text-accent sm:text-base">{p.name}</span>
                   <Price amount={p.price} size="large" />
                 </span>
               </Link>
