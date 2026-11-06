@@ -20,12 +20,12 @@ export default function PieceCard({ piece, eager = false }: { piece: Piece; eage
       data-testid={`piece-${piece.id}`}
       className="group flex h-full flex-col focus:outline-none"
     >
-      <div className="overflow-hidden">
+      <div className="mb-[var(--space-3)] overflow-hidden">
         <div className="transition-transform duration-[var(--duration-base)] ease-[var(--ease-out)] group-hover:scale-[1.02] group-focus-visible:scale-[1.02]">
           <ProductImage src={piece.image} alt={piece.name} aspect="1/1" eager={eager} slot={`/images/pieces-${piece.id}.png`} />
         </div>
       </div>
-      <div className="mt-auto flex items-baseline justify-between gap-[var(--space-4)] border-t border-line pt-[var(--space-3)] [margin-top:var(--space-3)]">
+      <div className="mt-auto flex items-baseline justify-between gap-[var(--space-4)] border-t border-line pt-[var(--space-3)]">
         <span className="min-w-0">
           <span className="block font-display text-base text-ink group-hover:text-accent-strong">{piece.name}</span>
           <span className="mt-1 block text-sm text-ink-soft">{sold ? soldWord : piece.glaze}</span>
