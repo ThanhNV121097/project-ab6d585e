@@ -40,14 +40,14 @@
   },
   {
     "id": "bowl-rice-12",
-    "name": "Rice bowls, 12 cm, set",
+    "name": "White glaze bowl, 12 cm",
     "kind": "Bowl",
     "glaze": "Men trắng white glaze",
-    "size": "12 cm across, 6 cm high, sold as a set",
+    "size": "12 cm across, 6 cm high",
     "price": 960000,
     "image": "/images/pieces-bowl-rice-12.jpg",
     "status": "available",
-    "detail": "Everyday bowls for a family table, thrown to one height so they stack.",
+    "detail": "An everyday bowl for the family table, thrown to the same height as the others so they stack.",
     "_source": "assumed",
     "_picture": "stand-in"
   },
