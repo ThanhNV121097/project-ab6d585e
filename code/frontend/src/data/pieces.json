@@ -52,15 +52,15 @@
     "_picture": "stand-in"
   },
   {
-    "id": "vase-men-ran-34",
-    "name": "Crackle vase, 34 cm",
+    "id": "vase-men-ngoc-34",
+    "name": "Celadon vase, 34 cm",
     "kind": "Vase",
-    "glaze": "Men rạn crackle",
+    "glaze": "Men ngọc celadon",
     "size": "34 cm high, 18 cm across",
     "price": 2850000,
     "image": "/images/pieces-vase-men-ran-24.png",
     "status": "available",
-    "detail": "Thrown in two parts and joined at the shoulder, the crackle running the full height of the belly.",
+    "detail": "Thrown in two parts and joined at the shoulder, under one pale green glaze poured thick at the foot.",
     "_source": "assumed",
     "_picture": "stand-in"
   },
@@ -126,32 +126,6 @@
     "image": "/images/pieces-teapot-hoa-lam-13.png",
     "status": "available",
     "detail": "A small pot painted over the glaze, with a pulled handle and a spout cut to pour without dripping.",
-    "_source": "assumed",
-    "_picture": "stand-in"
-  },
-  {
-    "id": "plate-men-ran-28",
-    "name": "Crackle plate, 28 cm",
-    "kind": "Plate",
-    "glaze": "Men rạn crackle",
-    "size": "28 cm across, 3 cm high",
-    "price": 780000,
-    "image": "/images/pieces-plate-men-ran-28.png",
-    "status": "available",
-    "detail": "A flat plate for one dish, the crackle drawn out by a slow cool so it reads across the whole face.",
-    "_source": "assumed",
-    "_picture": "stand-in"
-  },
-  {
-    "id": "plate-hoa-lam-22",
-    "name": "Hoa lam plate, 22 cm",
-    "kind": "Plate",
-    "glaze": "Hoa lam blue-and-white",
-    "size": "22 cm across, 3 cm high",
-    "price": 620000,
-    "image": "/images/pieces-plate-hoa-lam-22.png",
-    "status": "available",
-    "detail": "Painted in cobalt under the glaze, a band round the rim and a single spray in the well.",
     "_source": "assumed",
     "_picture": "stand-in"
   },
